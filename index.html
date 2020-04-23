@@ -9,6 +9,7 @@
        min-height: 12px;
      }
     </style>
+
   </head>
 
   <body>
@@ -22,7 +23,7 @@
 
     <br />
 
-    <div>
+    <div id="one">
       1
       <div>
         2
@@ -38,4 +39,18 @@
       </div>
     </div>
   </body>
+  <script>
+    console.log('working')
+    const main = document.getElementById('main');
+ 
+    main.addEventListener('click', function(event) {
+     document.body.style.backgroundColor = "red";
+    });
+    
+    const input = document.querySelector('input');
+    
+    input.addEventListener('keydown', function(e) {
+      console.log(e.key);
+    });
+  </script>
 </html>
